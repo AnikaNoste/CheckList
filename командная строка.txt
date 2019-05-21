@@ -1,0 +1,21 @@
+МИГРАЦИИ
+1. создание миграции (название + создание таблицы)
+ php artisan make:migration create_article_table --create=articles
+ 
+2. применение миграции 
+ php artisan migrate
+ 
+3. отменить последнюю миграцию 
+ php artisan migrate:rollback
+ 
+4. создание миграции (название, работа с таблицей) 
+ php artisan make:migration change_article_table --table=articles
+
+5. отменить все миграции
+ php artisan migrate:reset
+ 
+ 
+COMPOSER
+1. обновление laravel
+ composer update
+
